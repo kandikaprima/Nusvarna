@@ -16,9 +16,9 @@ Machine Learning
 * Lisa Asaliontin [Github](https://github.com/lisaasaliontin) [LinkedIn](https://www.linkedin.com/in/lisa-asaliontin-4210b8216/)
 
 Cloud Computing
-* Muhammad Al Fahri [Github](https://github.com/kandikaprima) [LinkedIn](https://www.linkedin.com/in/al-fahri-8361bb1a4/)
+* Muhammad Al Fahri [Github](https://github.com/alfahri18) [LinkedIn](https://www.linkedin.com/in/al-fahri-8361bb1a4/)
 
 * Okta Tiara Novitasari [Github](https://github.com/Ashleyookta) [LinkedIn](https://www.linkedin.com/in/okta-tiara-novitasari-017034247/)
 
 Mobile Development
-* Gusti Aqhsal Mujahid [Github](https://github.com/kandikaprima) [LinkedIn](https://www.linkedin.com/in/gustiaqhsal/)
+* Gusti Aqhsal Mujahid [Github](https://github.com/shall31) [LinkedIn](https://www.linkedin.com/in/gustiaqhsal/)
