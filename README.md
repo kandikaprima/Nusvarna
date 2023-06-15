@@ -22,3 +22,5 @@ Cloud Computing
 
 Mobile Development
 * Gusti Aqhsal Mujahid [Github](https://github.com/shall31) [LinkedIn](https://www.linkedin.com/in/gustiaqhsal/)
+
+C23-PS065 - Project NUSVARNA@2023
