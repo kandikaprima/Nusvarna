@@ -11,14 +11,14 @@ Nusvarna is a mobile app that would give education about Indonesian local cultur
 Machine Learning
 * Kandika Prima Putra [Github](https://github.com/kandikaprima) [LinkedIn](https://www.linkedin.com/in/kandikaprima/)
 
-* Mery Yulinda Rahmi [Github](https://github.com/kandikaprima) [LinkedIn](https://www.linkedin.com/in/kandikaprima/)
+* Mery Yulinda Rahmi [Github](https://github.com/meryyulinda) [LinkedIn](https://www.linkedin.com/in/kandikaprima/)
 
-* Lisa Asaliontin [Github](https://github.com/kandikaprima) [LinkedIn](https://www.linkedin.com/in/kandikaprima/)
+* Lisa Asaliontin [Github](https://github.com/lisaasaliontin) [LinkedIn](https://www.linkedin.com/in/lisa-asaliontin-4210b8216/)
 
 Cloud Computing
-* Muhammad Al Fahri [Github](https://github.com/kandikaprima) [LinkedIn](https://www.linkedin.com/in/kandikaprima/)
+* Muhammad Al Fahri [Github](https://github.com/kandikaprima) [LinkedIn](https://www.linkedin.com/in/al-fahri-8361bb1a4/)
 
-* Okta Tiara Novitasari [Github](https://github.com/kandikaprima) [LinkedIn](https://www.linkedin.com/in/kandikaprima/)
+* Okta Tiara Novitasari [Github](https://github.com/Ashleyookta) [LinkedIn](https://www.linkedin.com/in/okta-tiara-novitasari-017034247/)
 
 Mobile Development
-* Gusti Aqhsal Mujahid [Github](https://github.com/kandikaprima) [LinkedIn](https://www.linkedin.com/in/kandikaprima/)
+* Gusti Aqhsal Mujahid [Github](https://github.com/kandikaprima) [LinkedIn](https://www.linkedin.com/in/gustiaqhsal/)
