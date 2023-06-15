@@ -11,7 +11,7 @@ Nusvarna is a mobile app that would give education about Indonesian local cultur
 Machine Learning
 * Kandika Prima Putra [Github](https://github.com/kandikaprima) [LinkedIn](https://www.linkedin.com/in/kandikaprima/)
 
-* Mery Yulinda Rahmi [Github](https://github.com/meryyulinda) [LinkedIn](https://www.linkedin.com/in/kandikaprima/)
+* Mery Yulinda Rahmi [Github](https://github.com/meryyulinda) [LinkedIn](https://www.linkedin.com/)
 
 * Lisa Asaliontin [Github](https://github.com/lisaasaliontin) [LinkedIn](https://www.linkedin.com/in/lisa-asaliontin-4210b8216/)
 
