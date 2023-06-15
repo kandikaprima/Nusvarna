@@ -1,7 +1,7 @@
 # Nusvarna(Nusantara Berwarna)
 **"Budaya yang Berwarna"**
 
-Nusvarna is a mobile app that would give education about Indonesian local cultures, particularly by introducing the various kinds of traditional dresses in Indonesia through detecting types of traditional dresses through image recognition
+Nusvarna is a mobile app that would give education about Indonesian local cultures, particularly by introducing the various kinds of traditional dresses in Indonesia through image recognition
 
 # Screenshot
 
