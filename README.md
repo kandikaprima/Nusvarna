@@ -8,7 +8,7 @@ Nusvarna is a mobile app that would give education about Indonesian local cultur
 
 # Application
 ```
-https://github.com/kandikaprima/Nusvarna
+https://drive.google.com/file/d/1_Wjsedr3hQbBk18ZOCdaCfflPhWdAxKq/view?usp=sharing
 ```
 
 # Developers
