@@ -155,7 +155,7 @@ def predict():
             predicted = db.child('baju_tradisional').child(ml_class[hasil]).get().val()
             return jsonify({'predicted_label': ml_class[hasil],'detail' : predicted})
         else:
-            return jsonify({'error': 'tidak terdeteksi'}
+            return jsonify({'error': 'tidak terdeteksi'})
                           
 if __name__ == '__main__':
     app.run(debug = True, port=8080)
