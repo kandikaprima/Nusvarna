@@ -8,13 +8,13 @@ import os
 
 app = Flask(__name__)
 config = {
-  'apiKey': "AIzaSyAa667qOWokjNtRSTP0kTg0ZvTDalQopAI",
-  'authDomain': "moonlit-poetry-381319.firebaseapp.com",
-  'projectId': "moonlit-poetry-381319",
-  'storageBucket': "moonlit-poetry-381319.appspot.com",
-  'messagingSenderId': "167385462735",
-  'appId': "1:167385462735:web:a53855ed0b1a32a65d04ba",
-  'databaseURL':'https://moonlit-poetry-381319-default-rtdb.asia-southeast1.firebasedatabase.app/'
+  'apiKey': "",
+  'authDomain': "",
+  'projectId': "",
+  'storageBucket': "",
+  'messagingSenderId': "",
+  'appId': "",
+  'databaseURL':''
 }
 
 firebase = pyrebase.initialize_app(config)
