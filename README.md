@@ -5,6 +5,7 @@ Nusvarna is a mobile app that would give education about Indonesian local cultur
 
 # Screenshot
 
+![alt text](https://github.com/kandikaprima/Nusvarna/blob/main/Thumbnail.png "NUSVARNA")
 
 
 # Developers
