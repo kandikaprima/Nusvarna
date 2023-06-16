@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--cardview untuk membungkus layout-->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="180dp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    card_view:cardCornerRadius="4dp">
+
+    <!--    constraint-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+
+        <ImageView
+            android:id="@+id/eventcard_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            tools:src="@drawable/eventcardimage" />
+
+
+        <TextView
+            android:id="@+id/eventcard_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/poppins"
+            android:text="Parade adat jam gadang"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toTopOf="@+id/eventcard_loc"
+            card_view:layout_constraintStart_toStartOf="@id/eventcard_image"
+            tools:ignore="OnClick" />
+
+        <TextView
+            android:id="@+id/eventcard_loc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:layout_marginStart="12dp"
+            android:text="Bukit tinggi"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            card_view:layout_constraintBottom_toBottomOf="@+id/eventcard_image"
+            card_view:layout_constraintStart_toStartOf="@id/eventcard_image"
+            tools:ignore="OnClick" />
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

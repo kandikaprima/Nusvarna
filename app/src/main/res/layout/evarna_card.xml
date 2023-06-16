@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--cardview untuk membungkus layout-->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view_evarna"
+    android:layout_width="104dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="4dp"
+    card_view:cardCornerRadius="12dp">
+
+    <!--    constraint-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/evarna_image"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/minang"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/disewakan"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/evarna_image" />
+
+
+        <TextView
+            android:id="@+id/evarna_disewakan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Disewakan"
+            android:textColor="@color/secondary"
+            android:textSize="6sp"
+            android:textStyle="bold"
+            android:paddingLeft="8dp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/evarna_image"
+            />
+
+        <TextView
+            android:id="@+id/evarna_card_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:paddingLeft="4dp"
+            android:text="Baju Adat Minang Perempuan"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/evarna_card_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:paddingLeft="4dp"
+            android:text="Rp 127.000"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/evarna_card_title" />
+
+        <ImageView
+            android:id="@+id/profile_badge"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/baseline_location_on_24"
+            android:layout_marginLeft="4dp"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/evarna_card_price" />
+
+        <TextView
+            android:id="@+id/evarna_card_loc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:paddingLeft="4dp"
+            android:text="Samarinda"
+            android:textColor="@color/black"
+            android:textSize="6sp"
+            card_view:layout_constraintBottom_toBottomOf="@+id/profile_badge"
+            card_view:layout_constraintStart_toEndOf="@+id/profile_badge"
+            card_view:layout_constraintTop_toBottomOf="@+id/evarna_card_price" />
+
+        <ImageView
+            android:id="@+id/evarna_card_star"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/baseline_star_24"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/profile_badge" />
+
+        <TextView
+            android:id="@+id/evarna_card_rating"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:paddingLeft="4dp"
+            android:text="5.0 | 24 Transaksi"
+            android:textColor="@color/black"
+            android:textSize="6sp"
+            card_view:layout_constraintBottom_toBottomOf="@+id/evarna_card_star"
+            card_view:layout_constraintStart_toEndOf="@+id/profile_badge"
+            card_view:layout_constraintTop_toTopOf="@+id/evarna_card_star" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+

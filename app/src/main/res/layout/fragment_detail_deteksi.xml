@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detaildeteksi.DetailDeteksiFragment"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            app:iss_auto_cycle="true"
+            app:iss_delay="3000"
+            app:iss_period="3000"
+            app:iss_text_align="CENTER"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+        </com.denzcoskun.imageslider.ImageSlider>
+
+        <TextView
+            android:id="@+id/baju_adat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins"
+            android:text="Minangkabau"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewpager" />
+
+        <ImageView
+            android:id="@+id/badge_info"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="4dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/round_shape"
+            app:layout_constraintEnd_toEndOf="@+id/profile_badge"
+            app:layout_constraintStart_toStartOf="@+id/baju_adat"
+            app:layout_constraintTop_toBottomOf="@+id/baju_adat" />
+
+        <ImageView
+            android:id="@+id/profile_badge"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/location"
+            app:layout_constraintStart_toStartOf="@+id/baju_adat"
+            app:layout_constraintTop_toTopOf="@+id/badge_info" />
+
+        <ImageView
+            android:id="@+id/loc_background"
+            android:layout_width="108dp"
+            android:layout_height="54dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/loc_roundbackground"
+            app:layout_constraintBottom_toBottomOf="@+id/lokasi_detail"
+            app:layout_constraintStart_toEndOf="@+id/badge_info"
+            app:layout_constraintTop_toTopOf="@+id/lokasi_detail" />
+
+        <TextView
+            android:id="@+id/lokasi_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Sumatera Barat"
+            android:textColor="@color/main"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/badge_info"
+            app:layout_constraintStart_toEndOf="@+id/badge_info"
+            app:layout_constraintTop_toTopOf="@+id/badge_info" />
+
+        <TextView
+            android:id="@+id/baju_bajuadat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins"
+            android:text="Baju adat"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/baju_adat"
+            app:layout_constraintStart_toStartOf="@+id/badge_info"
+            app:layout_constraintTop_toBottomOf="@+id/badge_info" />
+
+
+        <TextView
+            android:id="@+id/barrier"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#77CACACA"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/baju_bajuadat" />
+
+        <TextView
+            android:id="@+id/tentang_adat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Tentang Adat"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barrier" />
+
+        <at.blogc.android.views.ExpandableTextView
+            android:id="@+id/deskripsi_adat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins"
+            android:paddingEnd="12dp"
+            android:text="asdawdawdawdwad"
+            android:maxLines="4"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/baju_adat"
+            app:layout_constraintTop_toBottomOf="@+id/tentang_adat" />
+
+        <TextView
+            android:id="@+id/lihat_selengkapnya"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="right"
+            android:paddingEnd="12dp"
+            android:text="Lihat Selengkapnya ..."
+            android:textColor="@color/main"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deskripsi_adat" />
+
+
+        <TextView
+            android:id="@+id/motif_bajuadat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Bahan dan Motif Baju Adat"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lihat_selengkapnya" />
+
+        <TextView
+            android:id="@+id/deskripsi_motif"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins"
+            android:paddingEnd="12dp"
+            android:text="afgvhbnjmkfvygbuhnhbgfvg"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:maxLines="4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/baju_adat"
+            app:layout_constraintTop_toBottomOf="@+id/motif_bajuadat" />
+
+        <TextView
+            android:id="@+id/penggunaan_bajuadat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Penggunaan"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deskripsi_motif" />
+
+
+        <TextView
+            android:id="@+id/deskripsi_penggunaan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:maxLines="4"
+            android:paddingEnd="12dp"
+            android:text="afgvhbnjmkfvygbuhnhbgfvg"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/baju_adat"
+            app:layout_constraintTop_toBottomOf="@+id/penggunaan_bajuadat" />
+
+        <TextView
+            android:id="@+id/barrier1"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#77CACACA"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deskripsi_penggunaan" />
+
+        <TextView
+            android:id="@+id/detail_tempatwisata"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Tempat Wisata"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingStart="12dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barrier1" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_tempatwisata"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_tempatwisata" />
+
+        <TextView
+            android:id="@+id/barrier2"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#77CACACA"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_tempatwisata" />
+
+        <TextView
+            android:id="@+id/detail_makanankhas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Makanan Khas"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingStart="12dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barrier2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_makanankhas"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_makanankhas" />
+
+        <TextView
+            android:id="@+id/barrier3"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#77CACACA"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_makanankhas" />
+
+        <TextView
+            android:id="@+id/detail_bangunanbersejarah"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Bangunan Bersejarah"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingStart="12dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barrier3" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_bangunanbersejarah"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_bangunanbersejarah" />
+
+        <TextView
+            android:id="@+id/barrier4"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#77CACACA"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_bangunanbersejarah" />
+
+        <TextView
+            android:id="@+id/detail_bajuadatlainnya"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Baju Adat Lainnya"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingStart="12dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barrier4" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_bajuadatlainnya"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_bajuadatlainnya" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,260 @@
+<resources>
+    <string name="app_name">Nusvarna</string>
+    <string name="apptitle">Nusvarna</string>
+    <string name="login_email">Email</string>
+    <string name="login_pass">Password</string>
+    <string name="lupa_pass"><u>Lupa Password ?</u></string>
+    <string name="appnamedesc">Budaya yang berwarna</string>
+    <string name="register">Belum memiliki akun ?</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="username">Username</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="sudah_memiliki_akun">Sudah memiliki akun ?</string>
+    <string name="kandika_prima_putra">Kandika Prima Putra</string>
+    <string name="kandikaprima_gmail_com">kandikaprima@gmail.com</string>
+    <string name="login">Login</string>
+
+    <string-array name="dev_name">
+        <item>Kandika Prima Putra</item>
+        <item>Lisa Asaliontin</item>
+        <item>Mery Yulinda Rahmi</item>
+        <item>Muhammad Al Fahri</item>
+        <item>Okta Tiara Novitasari</item>
+        <item>Gusti Aqhsal Mujahid</item>
+    </string-array>
+
+    <string-array name="dev_linkedin">
+        <item><a href="https://www.linkedin.com/in/kandikaprima">kandikaprima</a></item>
+        <item><a href="https://www.linkedin.com/in/lisa-asaliontin-4210b8216">kandikaprima</a></item>
+        <item>meryyulinda</item>
+        <item><a href="https://www.linkedin.com/in/muhammad-al-fahri-8361bb1a4">alfahri</a></item>
+        <item><a href="https://www.linkedin.com/in/okta-tiara-novitasari-017034247">kandikaprima</a></item>
+        <item><a href="https://www.linkedin.com/in/gusti-aqhsal-mujahid-807713267">gustiaqhsal</a></item>
+    </string-array>
+
+    <string-array name="dev_github">
+        <item>kandikaprima</item>
+        <item>lisaasaliontin</item>
+        <item>meryyulinda</item>
+        <item>alfahri18</item>
+        <item>kandikaprima</item>
+        <item>shall31</item>
+    </string-array>
+
+    <string-array name="dev_path">
+        <item>ML</item>
+        <item>ML</item>
+        <item>ML</item>
+        <item>CC</item>
+        <item>CC</item>
+        <item>MD</item>
+    </string-array>
+
+    <string-array name="dev_picture">
+        <item>@drawable/profile_pic</item>
+        <item>@drawable/profile_pic</item>
+        <item>@drawable/profile_pic</item>
+        <item>@drawable/profile_pic</item>
+        <item>@drawable/profile_pic</item>
+        <item>@drawable/profile_pic</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello uadsauhwduhawdhua</string>
+    <string name="beranda">Beranda</string>
+    <string name="pameran">Event</string>
+    <string name="deteksi">Deteksi</string>
+    <string name="Evarna">E-varna</string>
+
+
+    <string-array name="eventcard_name">
+        <item>Parade adat jam gadang</item>
+        <item>Parade adat jam ganteng</item>
+        <item>Parade adat jam badag</item>
+    </string-array>
+
+    <string-array name="eventcard_loc">
+        <item>Bukit tingg</item>
+        <item>Samarinda</item>
+        <item>Balikpapan</item>
+    </string-array>
+
+    <string-array name="eventcard_picture">
+        <item>@drawable/eventcardimage</item>
+        <item>@drawable/eventcardimage</item>
+        <item>@drawable/eventcardimage</item>
+    </string-array>
+
+
+    <string-array name="bajuadat_picture">
+        <item>@drawable/minang</item>
+        <item>@drawable/bugis</item>
+        <item>@drawable/bali</item>
+        <item>@drawable/papua</item>
+        <item>@drawable/minang</item>
+        <item>@drawable/minang</item>
+    </string-array>
+
+    <string-array name="bajuadat_name">
+        <item>Minang</item>
+        <item>Bugis</item>
+        <item>Bali</item>
+        <item>Papua</item>
+        <item>Kalimantan Utara</item>
+        <item>Jawa Timur</item>
+    </string-array>
+
+    <string-array name="eventmingguini_picture">
+        <item>@drawable/eventcardimage</item>
+        <item>@drawable/festival_erau</item>
+        <item>@drawable/pekanbatik</item>
+        <item>@drawable/festival_sekaten</item>
+        <item>@drawable/gandrung_sewu</item>
+        <item>@drawable/dieng_culture</item>
+    </string-array>
+
+    <string-array name="eventmingguini_name">
+        <item>Parade adat jam gadang</item>
+        <item>Festival Erau</item>
+        <item>Pekan Batik Nusantara</item>
+        <item>Festival Sekaten</item>
+        <item>Gandrung Sewu</item>
+        <item>Dieng Culture Festival</item>
+    </string-array>
+
+    <string-array name="eventmingguini_loc">
+        <item>Bukit tinggi</item>
+        <item>Tenggarong</item>
+        <item>Pekalongan</item>
+        <item>Yogyakarta</item>
+        <item>Banyuwangi</item>
+        <item>Dieng</item>
+    </string-array>
+
+    <string-array name="evarna_picture">
+        <item>@drawable/minang</item>
+        <item>@drawable/minang</item>
+        <item>@drawable/minang</item>
+        <item>@drawable/minang</item>
+        <item>@drawable/minang</item>
+        <item>@drawable/minang</item>
+        <item>@drawable/minang</item>
+        <item>@drawable/minang</item>
+        <item>@drawable/minang</item>
+        <item>@drawable/minang</item>
+        <item>@drawable/minang</item>
+        <item>@drawable/minang</item>
+        <item>@drawable/minang</item>
+        <item>@drawable/minang</item>
+        <item>@drawable/minang</item>
+        <item>@drawable/minang</item>
+        <item>@drawable/minang</item>
+        <item>@drawable/minang</item>
+    </string-array>
+
+    <string-array name="evarna_name">
+        <item>Baju Adat Minang Perempuan</item>
+        <item>Baju Adat Minang Perempuan</item>
+        <item>Baju Adat Minang Perempuan</item>
+        <item>Baju Adat Minang Perempuan</item>
+        <item>Baju Adat Minang Perempuan</item>
+        <item>Baju Adat Minang Perempuan</item>
+        <item>Baju Adat Minang Perempuan</item>
+        <item>Baju Adat Minang Perempuan</item>
+        <item>Baju Adat Minang Perempuan</item>
+        <item>Baju Adat Minang Perempuan</item>
+        <item>Baju Adat Minang Perempuan</item>
+        <item>Baju Adat Minang Perempuan</item>
+        <item>Baju Adat Minang Perempuan</item>
+        <item>Baju Adat Minang Perempuan</item>
+        <item>Baju Adat Minang Perempuan</item>
+        <item>Baju Adat Minang Perempuan</item>
+        <item>Baju Adat Minang Perempuan</item>
+        <item>Baju Adat Minang Perempuan</item>
+    </string-array>
+
+    <string-array name="evarna_disewakan">
+        <item>Disewakan</item>
+        <item>Disewakan</item>
+        <item>Disewakan</item>
+        <item>Disewakan</item>
+        <item>Disewakan</item>
+        <item>Disewakan</item>
+        <item>Disewakan</item>
+        <item>Disewakan</item>
+        <item>Disewakan</item>
+        <item>Disewakan</item>
+        <item>Disewakan</item>
+        <item>Disewakan</item>
+        <item>Disewakan</item>
+        <item>Disewakan</item>
+        <item>Disewakan</item>
+        <item>Disewakan</item>
+        <item>Disewakan</item>
+        <item>Disewakan</item>
+    </string-array>
+
+    <string-array name="evarna_harga">
+        <item>Rp 127.000</item>
+        <item>Rp 127.000</item>
+        <item>Rp 127.000</item>
+        <item>Rp 127.000</item>
+        <item>Rp 127.000</item>
+        <item>Rp 127.000</item>
+        <item>Rp 127.000</item>
+        <item>Rp 127.000</item>
+        <item>Rp 127.000</item>
+        <item>Rp 127.000</item>
+        <item>Rp 127.000</item>
+        <item>Rp 127.000</item>
+        <item>Rp 127.000</item>
+        <item>Rp 127.000</item>
+        <item>Rp 127.000</item>
+        <item>Rp 127.000</item>
+        <item>Rp 127.000</item>
+        <item>Rp 127.000</item>
+    </string-array>
+
+    <string-array name="evarna_loc">
+        <item>Samarinda</item>
+        <item>Samarinda</item>
+        <item>Samarinda</item>
+        <item>Samarinda</item>
+        <item>Samarinda</item>
+        <item>Samarinda</item>
+        <item>Samarinda</item>
+        <item>Samarinda</item>
+        <item>Samarinda</item>
+        <item>Samarinda</item>
+        <item>Samarinda</item>
+        <item>Samarinda</item>
+        <item>Samarinda</item>
+        <item>Samarinda</item>
+        <item>Samarinda</item>
+        <item>Samarinda</item>
+        <item>Samarinda</item>
+        <item>Samarinda</item>
+    </string-array>
+
+    <string-array name="evarna_rating">
+        <item>5.0 | 24 Transaksi</item>
+        <item>5.0 | 24 Transaksi</item>
+        <item>5.0 | 24 Transaksi</item>
+        <item>5.0 | 24 Transaksi</item>
+        <item>5.0 | 24 Transaksi</item>
+        <item>5.0 | 24 Transaksi</item>
+        <item>5.0 | 24 Transaksi</item>
+        <item>5.0 | 24 Transaksi</item>
+        <item>5.0 | 24 Transaksi</item>
+        <item>5.0 | 24 Transaksi</item>
+        <item>5.0 | 24 Transaksi</item>
+        <item>5.0 | 24 Transaksi</item>
+        <item>5.0 | 24 Transaksi</item>
+        <item>5.0 | 24 Transaksi</item>
+        <item>5.0 | 24 Transaksi</item>
+        <item>5.0 | 24 Transaksi</item>
+        <item>5.0 | 24 Transaksi</item>
+        <item>5.0 | 24 Transaksi</item>
+    </string-array>
+
+
+</resources>

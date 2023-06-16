@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.fragment.pameran.PameranFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/top_bar"
+            android:layout_width="0dp"
+            android:layout_height="220dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/profile_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_user"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/profile_pic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/top_bar" />
+
+        <TextView
+            android:id="@+id/profile_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/poppins"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toEndOf="@+id/profile_user"
+            app:layout_constraintTop_toTopOf="@+id/profile_user" />
+
+        <TextView
+            android:id="@+id/profile_user_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/poppins"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toEndOf="@+id/profile_user"
+            app:layout_constraintTop_toBottomOf="@+id/profile_user_name" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="40dp" />
+
+        <View
+            android:id="@+id/badge_info"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/main"
+            app:layout_constraintBottom_toBottomOf="@+id/top_bar"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profile_user"
+            app:layout_constraintTop_toBottomOf="@+id/profile_user"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/profile_location"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/baseline_location_on_24"
+            app:layout_constraintStart_toStartOf="@+id/profile_user_email"
+            app:layout_constraintTop_toBottomOf="@+id/profile_user_email" />
+
+        <TextView
+            android:id="@+id/profile_user_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/poppins"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/badge_info"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toEndOf="@+id/profile_location"
+            app:layout_constraintTop_toBottomOf="@+id/profile_user_email" />
+
+
+
+        <ImageView
+            android:id="@+id/profile_badge"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/award"
+            app:layout_constraintBottom_toBottomOf="@+id/badge_info"
+            app:layout_constraintStart_toStartOf="@id/badge_info"
+            app:layout_constraintTop_toTopOf="@+id/badge_info" />
+
+        <TextView
+            android:id="@+id/profile_badge_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="Pemburu Budaya"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/badge_info"
+            app:layout_constraintStart_toEndOf="@+id/profile_badge"
+            app:layout_constraintTop_toTopOf="@+id/badge_info" />
+
+
+        <ImageView
+            android:id="@+id/profile_badge_bar"
+            android:layout_width="0dp"
+            android:layout_height="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/progressbar"
+            app:layout_constraintBottom_toTopOf="@+id/profile_badge_subheader"
+            app:layout_constraintStart_toEndOf="@+id/profile_badge"
+            app:layout_constraintTop_toBottomOf="@id/profile_badge_icon"
+            app:layout_constraintEnd_toEndOf="@id/badge_info"/>
+
+        <TextView
+            android:id="@+id/profile_badge_subheader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins"
+            android:text="2 Event Kebudayaan lagi untuk naik"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/badge_info"
+            app:layout_constraintEnd_toEndOf="@+id/profile_badge_bar"
+            app:layout_constraintStart_toEndOf="@+id/profile_badge"
+            app:layout_constraintTop_toBottomOf="@+id/profile_badge_bar" />
+
+        <TextView
+            android:id="@+id/event_eventpage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins"
+            android:text="Event"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/top_bar" />
+
+        <TextView
+            android:id="@+id/lihatselengkapnya_eventpage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:layout_marginRight="12dp"
+            android:text="Lihat selengkapnya"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/event_eventpage"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_eventpage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_eventpage" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

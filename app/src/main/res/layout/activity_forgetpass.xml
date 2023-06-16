@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.ForgetpassActivity"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/forgetpass_icon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="160dp"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/forgetpass_appnamebottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/apptitle"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forgetpass_icon" />
+
+        <TextView
+            android:id="@+id/forgetpass_app_name_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="@string/appnamedesc"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forgetpass_appnamebottom" />
+
+        <TextView
+            android:id="@+id/forgetpass_email_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/login_email"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/ed_forgetpass_email"
+            app:layout_constraintTop_toBottomOf="@+id/forgetpass_app_name_desc" />
+
+        <com.dicoding.picodiploma.nusvarna.customviews.BasicEditText
+            android:id="@+id/ed_forgetpass_email"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:background="@drawable/edittext_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forgetpass_email_desc" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/poppins"
+            android:layout_marginBottom="80dp"
+            android:textColor="@color/white"
+            android:text="Simpan"
+            android:backgroundTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ed_forgetpass_email"
+            app:layout_constraintStart_toStartOf="@+id/ed_forgetpass_email"
+            app:layout_constraintTop_toBottomOf="@+id/ed_forgetpass_email" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

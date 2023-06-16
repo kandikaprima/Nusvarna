@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileSettingActivity"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/register_icon_profilesetting"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/stroke"
+            android:src="@drawable/profile_pic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/uploadPhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/baseline_camera_alt_24"
+            app:layout_constraintBottom_toBottomOf="@+id/register_icon_profilesetting"
+            app:layout_constraintEnd_toEndOf="@+id/register_icon_profilesetting"
+            app:layout_constraintStart_toStartOf="@+id/register_icon_profilesetting"
+            app:layout_constraintTop_toTopOf="@+id/register_icon_profilesetting" />
+
+
+        <TextView
+            android:id="@+id/register_email_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/username"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/ed_register_email"
+            app:layout_constraintTop_toBottomOf="@+id/register_icon_profilesetting" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/orang"
+            app:layout_constraintBottom_toBottomOf="@+id/ed_register_email"
+            app:layout_constraintStart_toStartOf="@+id/ed_register_email"
+            app:layout_constraintTop_toTopOf="@+id/ed_register_email" />
+
+        <ImageView
+            android:id="@+id/ed_register_email"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/edittext_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register_email_desc" />
+
+        <TextView
+            android:id="@+id/register_username_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="-"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ed_register_email"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/ed_register_email" />
+
+        <TextView
+            android:id="@+id/register_full_name_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/full_name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/ed_register_full_name"
+            app:layout_constraintTop_toBottomOf="@+id/ed_register_email" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/orang"
+            app:tint="@color/black"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ed_register_full_name"
+            app:layout_constraintStart_toStartOf="@+id/ed_register_full_name"
+            app:layout_constraintTop_toTopOf="@+id/ed_register_full_name" />
+
+        <com.dicoding.picodiploma.nusvarna.customviews.BasicEditText
+            android:id="@+id/ed_register_full_name"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:background="@drawable/edittext_background"
+            android:inputType="textEmailAddress"
+            android:paddingRight="10dp"
+            android:paddingLeft="40dp"
+            android:hint=""
+            android:fontFamily="@font/poppins"
+            app:layout_constraintEnd_toEndOf="@+id/ed_register_email"
+            app:layout_constraintStart_toStartOf="@+id/ed_register_email"
+            app:layout_constraintTop_toBottomOf="@+id/register_full_name_desc" />
+
+        <TextView
+            android:id="@+id/register_username_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/login_email"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/ed_register_full_name"
+            app:layout_constraintTop_toBottomOf="@+id/ed_register_full_name" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/email"
+            app:layout_constraintBottom_toBottomOf="@+id/ed_register_username"
+            app:layout_constraintStart_toStartOf="@+id/ed_register_username"
+            app:layout_constraintTop_toTopOf="@+id/ed_register_username" />
+
+        <ImageView
+            android:id="@+id/ed_register_username"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:background="@drawable/edittext_background"
+            app:layout_constraintEnd_toEndOf="@+id/ed_register_full_name"
+            app:layout_constraintStart_toStartOf="@+id/ed_register_full_name"
+            app:layout_constraintTop_toBottomOf="@+id/register_username_desc" />
+
+        <TextView
+            android:id="@+id/register_email_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="-"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ed_register_username"
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="@+id/ed_register_username" />
+
+
+        <TextView
+            android:id="@+id/register_pass_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/login_pass"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/ed_register_username"
+            app:layout_constraintTop_toBottomOf="@+id/ed_register_username" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/password"
+            app:layout_constraintBottom_toBottomOf="@+id/ed_register_pass"
+            app:layout_constraintStart_toStartOf="@+id/ed_register_pass"
+            app:layout_constraintTop_toTopOf="@+id/ed_register_pass" />
+
+        <ImageView
+            android:id="@+id/ed_register_pass"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:background="@drawable/edittext_background"
+            app:layout_constraintEnd_toEndOf="@+id/ed_register_username"
+            app:layout_constraintStart_toStartOf="@+id/register_pass_desc"
+            app:layout_constraintTop_toBottomOf="@id/register_pass_desc" />
+
+        <TextView
+            android:id="@+id/register_password_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="12345678"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:inputType="textPassword"
+            android:layout_marginStart="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ed_register_pass"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="@+id/ed_register_pass" />
+
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/poppins"
+            android:layout_marginBottom="80dp"
+            android:textColor="@color/secondary"
+            android:textStyle="bold"
+            android:text="Simpan"
+            android:backgroundTint="@color/main"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ed_register_pass"
+            app:layout_constraintStart_toStartOf="@+id/ed_register_pass"
+            app:layout_constraintTop_toBottomOf="@+id/ed_register_pass" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#CCFFD500"
+            android:layout_marginTop="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_bottom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="C23-PS065 - Project NUSVARNA@2023"
+            android:textColor="#003F88"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view4"
+            app:layout_constraintEnd_toEndOf="@+id/view4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view4" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

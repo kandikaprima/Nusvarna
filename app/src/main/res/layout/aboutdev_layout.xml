@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--cardview untuk membungkus layout-->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="4dp"
+    card_view:cardCornerRadius="4dp">
+
+    <!--    constraint-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="342dp"
+        android:layout_height="77dp"
+        android:layout_gravity="center"
+        android:padding="8dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/eventcard_image"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/dev_name1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/poppins"
+            android:text="Gusti Aqhsal Mujahid"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            card_view:layout_constraintEnd_toStartOf="@+id/developer_c"
+            card_view:layout_constraintStart_toEndOf="@+id/eventcard_image"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/developer_c"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:strokeColor="@color/black"
+            android:strokeWidth="2"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/dev_linkedin_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/linkedin"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/eventcard_image"
+            card_view:layout_constraintTop_toBottomOf="@+id/dev_name1" />
+
+        <TextView
+            android:id="@+id/eventcard_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/poppins"
+            android:text="Gusti Aqhsal Mujahid"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toBottomOf="@+id/dev_linkedin_icon"
+            card_view:layout_constraintEnd_toStartOf="@+id/guideline3"
+            card_view:layout_constraintStart_toEndOf="@+id/dev_linkedin_icon"
+            card_view:layout_constraintTop_toTopOf="@+id/dev_linkedin_icon"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/dev_github_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/github"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/guideline3"
+            card_view:layout_constraintTop_toBottomOf="@+id/dev_name1" />
+
+        <TextView
+            android:id="@+id/dev_github_hyperlink"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/poppins"
+            android:text="Gusti Aqhsal Mujahid"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toBottomOf="@+id/eventcard_name"
+            card_view:layout_constraintEnd_toStartOf="@+id/developer_c"
+            card_view:layout_constraintStart_toEndOf="@+id/dev_github_icon"
+            card_view:layout_constraintTop_toTopOf="@+id/eventcard_name" />
+
+        <TextView
+            android:id="@+id/dev_path"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="MD"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            card_view:layout_constraintBottom_toBottomOf="@+id/developer_c"
+            card_view:layout_constraintEnd_toEndOf="@+id/developer_c"
+            card_view:layout_constraintStart_toStartOf="@+id/developer_c"
+            card_view:layout_constraintTop_toTopOf="@+id/developer_c" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            card_view:layout_constraintGuide_begin="171dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
