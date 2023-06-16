@@ -155,23 +155,7 @@ def predict():
             predicted = db.child('baju_tradisional').child(ml_class[hasil]).get().val()
             return jsonify({'predicted_label': ml_class[hasil],'detail' : predicted})
         else:
-            return jsonify({'error': 'tidak terdeteksi'})
-
-
-@app.route('/logout', methods=['POST'])
-def logout():
-    access_token = request.headers.get('Authorization')
-    if not access_token:
-        return jsonify({'error': 'Access token not found'}), 401
-    try:
-        decoded_token = firebase.auth.verify_id_token(access_token)
-        uid = decoded_token['uid']
-        firebase.auth.revoke_refresh_tokens(uid)
-        session.clear()
-        return jsonify({'message': 'Logout successful'})
-    except Exception as e:
-        print(str(e))
-        return jsonify({'error': 'Failed to logout'}), 400
-    
+            return jsonify({'error': 'tidak terdeteksi'}
+                          
 if __name__ == '__main__':
     app.run(debug = True, port=8080)
