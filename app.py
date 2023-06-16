@@ -56,20 +56,25 @@ def login():
     except:
         return jsonify({'error': 'password email salah'}), 401
 
-@app.route('/profile', methods=['GET'])
+@app.route('/profile', methods=['GET', 'POST'])
 def profile():
+    # Retrieve access token from request headers
     access_token = request.headers.get('Authorization')
+
+    # Check if access token is missing
     if not access_token:
         return jsonify({'error': 'Access token tidak ditemukan'}), 400
+
     try:
         user = auth.get_account_info(access_token)
         uid = user['users'][0]['localId']
         user_data = db.child('data_user').child(uid).get().val()
         if not user_data:
-            return jsonify({'error': 'Data pengguna tidak ditemukan'}, uid), 404
+            return jsonify({'error': 'Data pengguna tidak ditemukan'}), 404
+
         return jsonify(user_data)
-    except Exception as e:
-        print(str(e))
+
+    except:
         return jsonify({'error': 'Gagal mengambil data pengguna'}), 400
   
 @app.route('/profile/edit', methods=['POST'])
@@ -85,7 +90,7 @@ def edit_profile():
             return jsonify({'error': 'User data not found'}), 404
         new_name = request.form.get('name')
         if new_name:
-            user_data[1] = new_name
+            user_data['name'] = new_name
             db.child('data_user').child(uid).update(user_data)
             return jsonify({'message': 'Profile updated successfully'})
         return jsonify({'error': 'No new name provided'}), 400
@@ -121,7 +126,7 @@ def upload_profile_photo():
             file.save(file_path)
             storage.child('profile').child(filename).put(file_path)
             download_url = storage.child('profile').child(filename).get_url(None)
-            user_data[3] = download_url 
+            user_data['profile_photo_url'] = download_url 
             db.child('data_user').child(uid).update(user_data)
             return jsonify({'message': 'Foto profil berhasil diupload', 'profile_photo_url': download_url})
         return jsonify({'error': 'File type not allowed'}), 400
@@ -156,6 +161,27 @@ def predict():
             return jsonify({'predicted_label': ml_class[hasil],'detail' : predicted})
         else:
             return jsonify({'error': 'tidak terdeteksi'})
-                          
+
+@app.route('/data', methods=['POST'])
+def get_data():
+    data_id = request.form.get('select')
+    if not data_id:
+        return jsonify({'error': 'Missing data ID parameter'}), 400
+    if data_id == '1':
+        data = db.child('baju_tradisional').child('asmat').get().val()
+    elif data_id == '2':
+        data = db.child('baju_tradisional').child('bali').get().val()
+    elif data_id == '3':
+        data = db.child('baju_tradisional').child('bugis').get().val()
+    elif data_id == '4':
+        data = db.child('baju_tradisional').child('dayak').get().val()
+    elif data_id == '5':
+        data = db.child('baju_tradisional').child('madura').get().val()
+    elif data_id == '6':
+        data = db.child('baju_tradisional').child('minang').get().val()
+    else:
+        return jsonify({'error': 'Invalid data ID'}), 400
+    return jsonify(data)
+
 if __name__ == '__main__':
-    app.run(debug = True, port=8080)
+    app.run(host='0.0.0.0', debug = True, port=8080)
