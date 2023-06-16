@@ -3,7 +3,7 @@
 
 Nusvarna is a mobile app that would give education about Indonesian local cultures, particularly by introducing the various kinds of traditional dresses in Indonesia through image recognition
 
-# Screenshot
+# Machine Learning
 
 
 
